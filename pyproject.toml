@@ -6,14 +6,15 @@ authors = ["Your Name <you@example.com>"]
 readme = "README.md"
 
 [tool.poetry.dependencies]
-python = ">=3.9,<3.12"
+python = ">=3.10,<3.12"
 redis = "^4.5.4"
 twilio = "^8.1.0"
 vonage = "^3.5.1"
 pyngrok = "^6.0.0"
 python-dotenv = "^1.0.0"
-vocode = "0.1.111a3"
-
+vocode = { git = "https://github.com/vocodedev/vocode-core.git", tag = "0.1.112" }
+deepgram-sdk = "^3.0.0"
+uvicorn = "^0.29.0"
 
 [build-system]
 requires = ["poetry-core"]
